@@ -10,8 +10,8 @@ _utils
 config.laptop.yml
 .idea
 packer_cache
-output-pwnagotchi
+output-cleanagotchi
 .DS_Store
 build
 dist
-pwnagotchi.egg-info
+cleanagotchi.egg-info

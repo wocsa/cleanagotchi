@@ -4,5 +4,5 @@ include distribute_setup.py
 include README.md
 include LICENSE
 recursive-include bin *
-recursive-include pwnagotchi *.py
-recursive-include pwnagotchi *.yml
+recursive-include cleanagotchi *.py
+recursive-include cleanagotchi *.yml

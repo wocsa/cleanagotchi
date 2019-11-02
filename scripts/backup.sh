@@ -3,7 +3,7 @@
 # name of the ethernet gadget interface on the host
 UNIT_HOSTNAME=${1:-10.0.0.2}
 # output backup zip file
-OUTPUT=${2:-pwnagotchi-backup.tgz}
+OUTPUT=${2:-cleanagotchi-backup.tgz}
 # username to use for ssh
 USERNAME=${3:-pi}
 # what to backup
@@ -14,8 +14,8 @@ FILES_TO_BACKUP=(
   /root/.bashrc
   /root/handshakes
   /root/peers
-  /etc/pwnagotchi/
-  /var/log/pwnagotchi.log
+  /etc/cleanagotchi/
+  /var/log/cleanagotchi.log
   /home/pi/.bashrc
 )
 

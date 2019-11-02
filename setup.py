@@ -8,7 +8,7 @@ import shutil
 
 def install_file(source_filename, dest_filename):
     # do not overwrite network configuration if it exists already
-    # https://github.com/evilsocket/pwnagotchi/issues/483
+    # https://github.com/wocsa/cleanagotchi/issues/483
     if dest_filename.startswith('/etc/network/interfaces.d/') and os.path.exists(dest_filename):
         print("%s exists, skipping ..." % dest_filename)
         return
@@ -46,18 +46,18 @@ with open('requirements.txt') as fp:
         if line != "":
             required.append(line)
 
-import pwnagotchi
+import cleanagotchi
 
-setup(name='pwnagotchi',
-      version=pwnagotchi.version,
+setup(name='cleanagotchi',
+      version=cleanagotchi.version,
       description='(⌐■_■) - Deep Reinforcement Learning instrumenting bettercap for WiFI pwning.',
       author='evilsocket && the dev team',
       author_email='evilsocket@gmail.com',
-      url='https://pwnagotchi.ai/',
+      url='https://cleanagotchi.ai/',
       license='GPL',
       install_requires=required,
-      scripts=['bin/pwnagotchi'],
-      package_data={'pwnagotchi': ['defaults.yml', 'pwnagotchi/defaults.yml', 'locale/*/LC_MESSAGES/*.mo']},
+      scripts=['bin/cleanagotchi'],
+      package_data={'cleanagotchi': ['defaults.yml', 'cleanagotchi/defaults.yml', 'locale/*/LC_MESSAGES/*.mo']},
       include_package_data=True,
       packages=find_packages(),
       classifiers=[

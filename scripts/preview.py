@@ -8,8 +8,8 @@ sys.path.insert(0,
                 os.path.join(os.path.dirname(os.path.realpath(__file__)),
                              '../'))
 
-import pwnagotchi.ui.faces as faces
-from pwnagotchi.ui.display import Display
+import cleanagotchi.ui.faces as faces
+from cleanagotchi.ui.display import Display
 from PIL import Image
 
 
@@ -86,7 +86,7 @@ def append_images(images, horizontal=True, xmargin=0, ymargin=0):
 
 def main():
     parser = argparse.ArgumentParser(description="This program emulates\
-                                     the pwnagotchi display")
+                                     the cleanagotchi display")
     parser.add_argument('--displays', help="Which displays to use.", nargs="+", default=["waveshare_2"])
     parser.add_argument('--lang', help="Language to use",
                         default="en")
